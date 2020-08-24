@@ -88,6 +88,7 @@ The structure for all the `args` is defined in each widget builder, which are de
 Widget Builders | Example Location
 ----------------|------------------
 [align](https://pub.dev/documentation/json_dynamic_widget/latest/json_dynamic_widget/JsonAlignBuilder/fromDynamic.html) | [align.json](https://github.com/peiffer-innovations/json_dynamic_widget/blob/main/example/assets/pages/align.json)
+[animated_opacity](https://pub.dev/documentation/json_dynamic_widget/latest/json_dynamic_widget/JsonAnimatedOpacityBuilder/fromDynamic.html) | [animated_opacity.json](https://github.com/peiffer-innovations/json_dynamic_widget/blob/main/example/assets/pages/animated_opacity.json)
 [app_bar](https://pub.dev/documentation/json_dynamic_widget/latest/json_dynamic_widget/JsonAppBaruilder/fromDynamic.html) | [align.json](https://github.com/peiffer-innovations/json_dynamic_widget/blob/main/example/assets/pages/align.json)
 [aspect_ratio](https://pub.dev/documentation/json_dynamic_widget/latest/json_dynamic_widget/JsonAspectRatioBuilder/fromDynamic.html) | [aspect_ratio.json](https://github.com/peiffer-innovations/json_dynamic_widget/blob/main/example/assets/pages/aspect_rato.json)
 [asset_image](https://pub.dev/documentation/json_dynamic_widget/latest/json_dynamic_widget/JsonAspectImageBuilder/fromDynamic.html) | [asset_images.json](https://github.com/peiffer-innovations/json_dynamic_widget/blob/main/example/assets/pages/asset_images.json)
@@ -149,6 +150,11 @@ A variable can be used in any of the `child` / `children` / `args` values and fo
 
 Widgets that accept user input will assign that user input to a variable named the value inside of the `id` option, if an `id` exists.  This allows widgets the ability to listen to input value updates.
 
+The built in variables are defined below:
+
+Variable Name    | Example | Description
+-----------------|---------|------------
+`*curve_name*_curve` | <ul><li>`{{linear_curve}}`</li><li>`{{bounce_in_curve}}`</li></ul> | Provides a `const` instance of any of the [Curves](https://api.flutter.dev/flutter/animation/Curves-class.html#constants) const values. The name of the Curve constant should be transformed into snake_case.
 
 ## Dynamic Functions
 
