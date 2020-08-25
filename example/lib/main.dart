@@ -127,6 +127,7 @@ class RootPage extends StatelessWidget {
 
   static const _pages = [
     'align',
+    'animated_align',
     'animated_opacity',
     'aspect_ratio',
     'asset_images',
