@@ -158,8 +158,58 @@ void main() async {
             .toList();
       };
     },
+    'updateList': ({args, registry}) => () async {
+          List l = registry.getValue(args[0]);
+
+          await Future.delayed(
+            Duration(seconds: 2),
+          );
+
+          l.add(Container(
+            height: 200.0,
+            child: Row(
+              children: [
+                Container(color: Colors.red),
+                Container(color: Colors.white),
+                Container(color: Colors.red),
+              ],
+            ),
+          ));
+
+          registry.setValue(args[0], l);
+        },
   });
 
+  registry.setValue(
+    'containerList',
+    [
+      JsonWidgetData.fromDynamic(
+        {
+          'type': 'container',
+          'args': {
+            'color': '#000',
+            'height': 200.0,
+          },
+        },
+      ),
+      /*Container(
+        height: 200.0,
+        color: Colors.blue,
+      ),
+      Container(
+        height: 200.0,
+        color: Colors.green,
+      ),
+      Container(
+        height: 200.0,
+        color: Colors.black,
+      ),
+      Container(
+        height: 200.0,
+        color: Colors.orange,
+      ),*/
+    ],
+  );
   registry.setValue('customRect', Rect.largest);
 
   runApp(MyApp(
@@ -241,6 +291,7 @@ class RootPage extends StatelessWidget {
     'overflow_box',
     'placeholder',
     'popup_menu_button',
+    'refresh_indicator',
     'simple_page',
     'switch',
     'theme',

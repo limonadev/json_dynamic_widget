@@ -66,6 +66,7 @@ export 'src/builders/json_popup_menu_button_builder.dart';
 export 'src/builders/json_positioned_builder.dart';
 export 'src/builders/json_radio_builder.dart';
 export 'src/builders/json_raised_button_builder.dart';
+export 'src/builders/json_refresh_indicator_builder.dart';
 export 'src/builders/json_row_builder.dart';
 export 'src/builders/json_safe_area_builder.dart';
 export 'src/builders/json_save_context_builder.dart';

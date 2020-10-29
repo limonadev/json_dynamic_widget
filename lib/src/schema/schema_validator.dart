@@ -126,6 +126,7 @@ class SchemaValidator {
       cache.addSchema(PositionedSchema.id, PositionedSchema.schema);
       cache.addSchema(RadioSchema.id, RadioSchema.schema);
       cache.addSchema(RaisedButtonSchema.id, RaisedButtonSchema.schema);
+      cache.addSchema(RefreshIndicatorSchema.id, RefreshIndicatorSchema.schema);
       cache.addSchema(RowSchema.id, RowSchema.schema);
       cache.addSchema(SafeAreaSchema.id, SafeAreaSchema.schema);
       cache.addSchema(SaveContextSchema.id, SaveContextSchema.schema);

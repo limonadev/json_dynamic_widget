@@ -1,0 +1,26 @@
+{
+  "type": "scaffold",
+  "args": {
+    "appBar": {
+      "type": "app_bar",
+      "args": {
+        "title": {
+          "type": "text",
+          "args": {
+            "text": "RefreshIndicator"
+          }
+        }
+      }
+    },
+    "body": {
+      "type": "refresh_indicator",
+      "args": {
+        "onRefresh": "##updateList(containerList)##"
+      },
+      "child": {
+        "type": "list_view",
+        "children": "{{containerList}}"
+      }
+    }
+  }
+}

@@ -67,6 +67,7 @@ export 'schemas/popu_menu_button_schema.dart';
 export 'schemas/positioned_schema.dart';
 export 'schemas/radio_schema.dart';
 export 'schemas/raised_button_schema.dart';
+export 'schemas/refresh_indicator_schema.dart';
 export 'schemas/row_schema.dart';
 export 'schemas/safe_area_schema.dart';
 export 'schemas/save_context_schema.dart';

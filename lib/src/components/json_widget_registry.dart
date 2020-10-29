@@ -362,6 +362,10 @@ class JsonWidgetRegistry {
       builder: JsonRaisedButtonBuilder.fromDynamic,
       schemaId: RaisedButtonSchema.id,
     ),
+    JsonRefreshIndicatorBuilder.type: JsonWidgetBuilderContainer(
+      builder: JsonRefreshIndicatorBuilder.fromDynamic,
+      schemaId: RefreshIndicatorSchema.id,
+    ),
     JsonRowBuilder.type: JsonWidgetBuilderContainer(
       builder: JsonRowBuilder.fromDynamic,
       schemaId: RowSchema.id,
